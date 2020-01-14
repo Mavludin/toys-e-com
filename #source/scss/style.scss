@@ -44,6 +44,10 @@ button, input {
     outline: unset;
 }
 
+button:focus {
+	outline: unset;
+}
+
 i {
 	cursor: pointer;
 }
@@ -228,14 +232,14 @@ i {
 
 .owl-dots {
 	position: absolute;
-    left: -15%;
+    left: -44%;
     top: 50%;
     transform: rotate(90deg);
 }
 
 .owl-theme .owl-dots .owl-dot span {
-	width: 14px;
-    height: 14px;
+    width: 22px;
+    height: 22px;
 	background: #E23042;
     box-shadow: 0px 2px 3px #F13E50, inset 0px 0px 6px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.15);
     filter: blur(0.5px);
@@ -305,6 +309,29 @@ footer {
 		text-transform: uppercase;
 		color: #FDFFFF;
 		margin-bottom: 20px;
+
+		@media screen and (max-width: 600px) {
+			& {
+				cursor: pointer;
+			}
+		}
+
+		i {
+			display: none;
+			font-size: 16px;
+    		margin-left: 5px;
+
+    		@media screen and (max-width: 600px) {
+				& {
+					display: inline-block;
+					transition: .2s;
+				}
+
+				&.rotate {
+					transform: rotate(180deg);
+				}
+			}
+		}
 	}
 
 	ul li {

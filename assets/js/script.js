@@ -16,4 +16,10 @@ $(document).ready(function() {
 		}
 	});
 
+
+	$("#footer-content h4").on('click', function(){
+		$(this).find('i').toggleClass('rotate');
+        $(this).next("ul").slideToggle(200)
+	});
+
 });
