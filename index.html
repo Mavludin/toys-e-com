@@ -9,45 +9,51 @@
     <script src="https://kit.fontawesome.com/4326f6cda5.js"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Owl-Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>E-commerce</title>
   </head>
   <body>
     
     <header>
-      <div id="top-header">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center">
-            <div class="p-2">          
-                <i class="fas fa-map-marker-alt"></i> Республика Дагестан, г.Махачкала
-            </div>
-            <div class="p-2">
-              <ul>
-                <li><a href="#">Наши магазины</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">Обратная связь</a></li>
-              </ul>
+
+        <div id="top-header">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="p-2">          
+                  <i class="fas fa-map-marker-alt"></i> Республика Дагестан, г.Махачкала
+              </div>
+              <div class="p-2">
+                <ul>
+                  <li><a href="#">Наши магазины</a></li>
+                  <li><a href="#">Доставка и оплата</a></li>
+                  <li><a href="#">Обратная связь</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="mid-header">
-        <div class="container">
+        <div class="container" id="mid-header">
           <div class="d-flex justify-content-between align-items-center">
 
-            <div class="p-2">
+            <div>
               <img src="img/logo.png" alt="Logo">
             </div>
-            <div class="p-2">
+
+            <div>
               <div id="search-box">
                 <i class="fas fa-search"></i>
                 <input type="search" name="search" placeholder="Поиск по товарам и брендам">
               </div>
             </div>
 
-            <div class="p-2">
+            <div>
               <ul>
                 <li><img src="img/key.svg" alt="Access"><a href="#">Аккаунт</a></li>
                 <li><img src="img/heart.svg" alt="Favourites"><a href="#">Избранное</a></li>
@@ -57,34 +63,128 @@
 
           </div>
         </div>
-      </div>
 
-      <div id="bot-header">
-        <div class="container d-flex justify-content-between align-items-center">
-          <div id="catalog">
-            <a href="#">Каталог товаров</a>
+        <div class="container" id="bot-header">
+          <div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div id="catalog">
+                <a href="#"><img src="img/catalog.svg" alt="Catalog">Каталог товаров</a>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Акции</a></li>
+                  <li><a href="#">Скидки</a></li>
+                  <li><a href="#">Бренды</a></li>
+                  <li><a href="#">Игрушки и игры</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <nav>
-            <ul>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Акции</a></li>
-              <li><a href="#">Скидки</a></li>
-              <li><a href="#">Бренды</a></li>
-              <li><a href="#">Игрушки и игры</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Вакансии</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
         </div>
-      </div>
+
+        <div class="container" id="slider">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="owl-carousel owl-theme p-2">
+              <div>
+                <h2>Ждем вас за самыми крутыми игрушками!</h2>
+                <p>В ассортименты нашего магазина имеются более 1000 разновидностей игрушек, которые доставят удовольствие детям любых возрастов. Скорее за покупками!</p>
+                <button class="buy-btn justify-content-around d-flex align-items-center"> 
+                  <span>Купить игрушки</span><i class="fas fa-arrow-alt-circle-right"></i>
+                </button>
+              </div>
+              <div>
+                <h2>Заголовок 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+              </div>
+              <div>
+                <h2>Заголовок 2</h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
     </header>
+  
+  <main>
+    
+  </main>
+
+    <footer>
+      <div id="footer-content" class="container">
+        <div class="d-flex justify-content-sm-between flex-wrap">
+          <div>
+            <h4>Интернет-магазин</h4>
+            <ul>
+              <li><a href="">О нашем магазине</a></li>
+              <li><a href="">Возврат товара</a></li>
+              <li><a href="">Доставка и оплата</a></li>
+              <li><a href="">Спецпредложения и акции</a></li>
+              <li><a href="">Обзоры и рекомендации</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>О компании</h4>
+            <ul>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Акции</a></li>
+              <li><a href="">Магазины сети</a></li>
+              <li><a href="">Контакты</a></li>
+              <li><a href="">Обратная связь</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Сотрудничество</h4>
+            <ul>
+              <li><a href="">О компании</a></li>
+              <li><a href="">Раскрытие информации</a></li>
+              <li><a href="">Инвесторам</a></li>
+              <li><a href="">Закупки и обучение</a></li>
+              <li><a href="">Пресс-центр</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Контактная информация</h4>
+            <div id="contacts">
+              <p id="phone"><i class="fas fa-phone-alt"></i> <span>+7 (800) 600-50-05</span></p>
+              <p id="schedule">c 9:00 до 21:00, без выходных</p>
+              <div id="social" class="d-flex justify-content-between align-items-center">
+
+                <i class="fab fa-vk"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-f"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2" id="bot-footer">
+        © 2019 Интернет-магазин «Play Toys»
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  
+    <!--Owl-carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!--Main JS -->
+    <script src="assets/js/script.js"></script>
+
   </body>
 </html>
