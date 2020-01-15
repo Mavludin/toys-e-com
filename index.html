@@ -24,7 +24,7 @@
 
         <div id="top-header">
           <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-between align-items-center">
               <div class="p-2">          
                   <i class="fas fa-map-marker-alt"></i> Республика Дагестан, г.Махачкала
               </div>
@@ -43,31 +43,37 @@
           <div class="d-flex justify-content-between align-items-center">
 
             <div>
-              <img src="img/logo.png" alt="Logo">
+              <img id="logo" src="img/logo.png" alt="Logo">
             </div>
 
-            <div>
-              <div id="search-box">
-                <i class="fas fa-search"></i>
-                <input type="search" name="search" placeholder="Поиск по товарам и брендам">
-              </div>
+            <div id="search-box">
+              <i class="fas fa-search"></i>
+              <input type="search" name="search" placeholder="Поиск по товарам и брендам">
+            </div>
+
+            <div id="hamb-block">
+              <img src="img/hamb.png" alt="Hamburger">
+            </div>
+
+            <div id="close-menu">
+              <img src="img/close-btn.png" alt="Close Menu Button">
             </div>
 
             <div>
               <ul>
-                <li><a href="#"><img src="img/key.svg" alt="Access">Аккаунт</a></li>
-                <li><a href="#"><img src="img/heart.svg" alt="Favourites">Избранное</a></li>
-                <li><a href="#"><img src="img/cart.svg" alt="Access" alt="Cart">Корзина</a></li>
+                <li><a href="#"><img src="img/key.svg" alt="Access icon">Аккаунт</a></li>
+                <li><a href="#"><img src="img/favourites.png" alt="Favourites icon">Избранное</a></li>
+                <li><a href="#"><img src="img/cart.svg" alt="Access" alt="Cart icon">Корзина</a></li>
               </ul>                
             </div>
 
           </div>
         </div>
 
-        <div class="container" id="bot-header">
+        <div class="container" id="large-menu">
           <div>
             <div class="d-flex justify-content-between align-items-center">
-              <div id="catalog">
+              <div id="catalog-link">
                 <a href="#"><img src="img/catalog.svg" alt="Catalog">Каталог товаров</a>
               </div>
               <nav>
@@ -84,6 +90,60 @@
               </nav>
             </div>
           </div>
+        </div>
+
+        <div class="container" id="mobile-menu">
+          <nav class="p-4">
+            <ul id="main-mobile-menu">
+              <li><a href="#">
+                <img class="red-account-icon" src="img/red-account.png" alt="Red Account image">Аккаунт</a>
+              </li>
+              <li><a href="#">Главная</a></li>
+              <li id="show-catalog-menu">
+                <a class="d-flex justify-content-between align-items-center" href="#">
+                  Каталог товаров <img class="arrow-right-icon" src="img/arrow-right.png" alt="Arrow right">
+                </a>
+              </li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Скидки</a></li>
+              <li><a href="#">Бренды</a></li>
+              <li><a href="#">Игрушки и игры</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Вакансии</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <ul id="catalog-menu">
+              <li class="back">
+                <a href="#"><img class="arrow-left-icon" src="img/arrow-left.png" alt="Arrow left">Назад</a>
+              </li>
+              <li><a href="#">Куклы и аксессуары</a></li>
+              <li><a href="#">Настольные игры</a></li>
+              <li><a href="№">Фигурки и наборы</a></li>
+              <li><a href="#">Мягкие игрушки</a></li>
+              <li><a href="#">Детские конструкторы</a></li>
+              <li><a href="#">Сюжетно-ролевые игры</a></li>
+              <li><a href="#">Игрушечный транспорт</a></li>
+              <li><a href="#">Роботы и трансформеры</a></li>
+              <li><a href="#">Радиоуправляемые игрушки</a></li>
+              <li><a href="#">Игровые наборы</a></li>
+              <li><a href="#">Игрушки-антистресс</a></li>
+            </ul>
+
+          </nav>
+        </div>
+
+        <div class="container" id="header-bot-menu">
+          <ul class="d-flex justify-content-around align-items-center">
+            <li><a href="/"><img src="img/home.png" alt="Home icon">Главная</a></li>
+            <li><a href="#"><img src="img/catalog.svg" alt="Catalog icon">Каталог</a></li>
+            <li><a href="#"><img src="img/cart.svg" alt="Access" alt="Cart icon">Корзина</a></li>
+            <li>
+              <a href="#">
+                <img src="img/favourites.png" alt="Access" alt="Favourites icon">Избранное<span id="counter">1</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div class="container" id="slider">
@@ -128,6 +188,82 @@
     </header>
   
   <main>
+
+    <div id="brands" class="container d-flex justify-content-center align-items-center">
+      <div id="left">
+        <h2>Популярные бренды</h2>
+      </div>
+      <div id="right">
+
+        <div>
+          <div id="play-doh">
+            <div>
+              <img src="img/popular-brands/play-doh.png" alt="Play-Doh">
+              <img src="img/popular-brands/dinoz.png" alt="Dinosaurs">
+            </div>
+            <div>
+              <h4>Play-Doh</h4>
+              <p>Небольшой кусочек этого материала способен воплотить самые смелые фантазии ребят и помочь им создать фигурки зверюшек, человечков и т.д!</p>
+              <a href="">Посмотреть 
+                <img src="img/popular-brands/long-arrow-right.png" alt="long-arrow-right icon">
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <div id="beyblade">
+            <div>
+              <img src="img/popular-brands/beyblade.png" alt="Beyblade burst">
+            </div>
+            <div>
+              <h4>Beyblade burst</h4>
+              <p>Волчки BEYBLADE — это динамическая модификация традиционной японской игры Bei-Goma.</p>
+              <a href="">Посмотреть 
+                <img src="img/popular-brands/long-arrow-right.png" alt="long-arrow-right icon">
+              </a>
+            </div>   
+          </div>
+        </div>
+
+        <div>
+          <div id="lol">
+            <div>
+              <img src="img/popular-brands/lol.png" alt="LOL dools">
+              <img src="img/popular-brands/girl.png" alt="Girl">
+            </div>
+            <div>
+              <h4>LOL Куклы</h4>
+              <p>Уникальная игрушка кукла сюрприз LOL от компании MGA Entertainment, подарившей нам такие бренды как Bratz, Lalaloopsy, Moxie и Num Noms.</p>
+              <a href="">Посмотреть 
+                <img src="img/popular-brands/long-arrow-right.png" alt="long-arrow-right icon">
+              </a>
+            </div>   
+          </div>
+        </div>
+        
+        <div>
+          <div id="lego">
+            <div>
+              <img src="img/popular-brands/lego.png" alt="Lego icon">
+              <img src="img/popular-brands/subtract.png" alt="Lego figures">
+            </div>
+            <div>
+              <h4>Lego</h4>
+              <p>Cерии конструктора, представляющие собой наборы деталей для сборки и моделирования разнообразных предметов.</p>
+              <a href="">Посмотреть 
+                <img src="img/popular-brands/long-arrow-right.png" alt="long-arrow-right icon">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <button class="buy-btn justify-content-around d-flex align-items-center"> 
+          <span>Все бренды</span><i class="fas fa-arrow-alt-circle-right"></i>
+        </button>
+
+      </div>
+    </div>
     
   </main>
 
