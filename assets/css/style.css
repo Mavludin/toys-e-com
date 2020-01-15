@@ -12,7 +12,7 @@ body {
 header {
   color: white;
   width: 100%;
-  height: 864px;
+  height: 900px;
   background-image: url("../../img/header-bg.png");
 }
 
@@ -348,10 +348,6 @@ header, #brands #right #play-doh, #brands #right #beyblade, #brands #right #lol,
   margin-bottom: 4px;
 }
 
-#slider {
-  margin-top: 86px;
-}
-
 .owl-theme {
   width: 60%;
   position: relative;
@@ -366,6 +362,10 @@ header, #brands #right #play-doh, #brands #right #beyblade, #brands #right #lol,
 
 .owl-theme p {
   margin-top: 20px;
+}
+
+#toys {
+  width: 40%;
 }
 
 .buy-btn {
