@@ -4,7 +4,7 @@ $(document).ready(function() {
 		items: 1,
 		autoplay: false,
 		loop: true,
-		nav: false,
+		autoHeight:true,
 		responsive: {
 			0: {
 				nav: false
