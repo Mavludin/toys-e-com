@@ -5,17 +5,9 @@ $(document).ready(function() {
 		autoplay: false,
 		loop: true,
 		autoHeight:true,
-		responsive: {
-			0: {
-				nav: false
-			},
-
-			900: {
-				nav: false
-			}
-		}
+		nav: true,
+		navText : ["<img src='../../img/nav-prev.png'>","<img src='../../img/nav-next.png'>"]
 	});
-
 
 	$("#footer-content h4 i").on('click', function(){
 		$(this).toggleClass('rotate');
@@ -52,6 +44,6 @@ $(document).ready(function() {
  	$('#catalog-menu .back').on('click', function() {
  		$(this).parent().hide();
  		$('#main-mobile-menu').fadeIn();
- 	});
+	 });
 
 });
