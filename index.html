@@ -152,9 +152,9 @@
               <div>
                 <h2>Ждем вас за самыми крутыми игрушками!</h2>
                 <p>В ассортименты нашего магазина имеются более 1000 разновидностей игрушек, которые доставят удовольствие детям любых возрастов. Скорее за покупками!</p>
-                <button class="buy-btn justify-content-around d-flex align-items-center"> 
+                <a href="#" class="buy-btn justify-content-around d-flex align-items-center"> 
                   <span>Купить игрушки</span><i class="fas fa-arrow-alt-circle-right"></i>
-                </button>
+                </a>
               </div>
               <div>
                 <h2>Заголовок 1</h2>
@@ -195,14 +195,14 @@
   <main>
 
     <div id="brands-bg"></div>
-    <div id="brands" class="container d-flex justify-content-center align-items-center flex-wrap ">
-      <div id="left">
-        <h2>Популярные бренды</h2>
+    <div id="brands" class="special container d-flex justify-content-center align-items-center flex-wrap">
+      <div class="left">
+        <h2 class="yellow-title">Популярные бренды</h2>
       </div>
-      <div id="right">
+      <div class="right d-flex flex-wrap justify-content-center">
 
-        <div>
-          <div id="play-doh">
+        <div class="brand-item p-2">
+          <div class="item-content d-flex align-items-center" id="play-doh">
             <div>
               <img src="img/popular-brands/play-doh.png" alt="Play-Doh">
               <img src="img/popular-brands/dinoz.png" alt="Dinosaurs">
@@ -217,8 +217,8 @@
           </div>
         </div>
         
-        <div>
-          <div id="beyblade">
+        <div class="brand-item p-2">
+          <div class="item-content d-flex align-items-center" id="beyblade">
             <div>
               <img src="img/popular-brands/beyblade-title.png" alt="Beyblade title">
               <img src="img/popular-brands/beyblade.png" alt="Beyblade burst">
@@ -233,8 +233,8 @@
           </div>
         </div>
 
-        <div>
-          <div id="lol">
+        <div class="brand-item p-2">
+          <div class="item-content d-flex align-items-center" id="lol">
             <div>
               <img src="img/popular-brands/lol.png" alt="LOL dools">
               <img src="img/popular-brands/girl.png" alt="Girl">
@@ -249,8 +249,8 @@
           </div>
         </div>
         
-        <div>
-          <div id="lego">
+        <div class="brand-item p-2">
+          <div class="item-content d-flex align-items-center" id="lego">
             <div>
               <img src="img/popular-brands/lego.png" alt="Lego icon">
               <img src="img/popular-brands/subtract.png" alt="Lego figures">
@@ -265,10 +265,181 @@
           </div>
         </div>
 
-        <button class="buy-btn justify-content-around d-flex align-items-center"> 
+        <a href="#" class="buy-btn justify-content-around d-flex align-items-center"> 
           <span>Все бренды</span><i class="fas fa-arrow-alt-circle-right"></i>
-        </button>
+        </a>
 
+      </div>
+    </div>
+
+    <div id="products">
+      <h2>Популярные товары <br /><span>и категории</span></h2>
+
+      <div class="container" id="products-inner">
+        <div class="d-flex flex-wrap justify-content-center align-items-center">
+          <div class="product-item d-flex">
+            <div class="item-inner d-flex justify-content-around flex-wrap flex-column align-items-center">
+              <div><img class="product-img" src="img/popular-products/1.png" alt="LOL dool or pet in box"></div>
+              <p class="item-title">Набор-сюрприз LOL мини кукла или питомец в упаковке</p>
+              <div class="price d-flex justify-content-between align-items-center">
+                <span>600 ₽</span>
+                <a class="cart" href="#"><img src="img/popular-products/cart.png" alt="Cart"></a>
+              </div>
+              <a class="wish" href="#"><img src="img/popular-products/wish.png" alt="Wish"></a>
+            </div>
+          </div>
+          <div class="product-item d-flex">
+            <div class="item-inner d-flex justify-content-around flex-wrap flex-column align-items-center">
+              <div><img class="product-img" src="img/popular-products/2.png" alt="LEGO constructor"></div>
+              <p class="item-title">Конструктор LEGO Technic ДУ Скоростной вездеход</p>
+              <div class="price d-flex justify-content-between align-items-center">
+                <span>4200 ₽</span>
+                <a class="cart" href="#"><img src="img/popular-products/cart.png" alt="Cart"></a>
+              </div>
+              <a class="wish" href="#"><img src="img/popular-products/wish.png" alt="Wish"></a>
+            </div>
+          </div>
+          <div class="product-item d-flex">
+            <div class="item-inner d-flex justify-content-around flex-wrap flex-column align-items-center">
+              <div><img class="product-img" src="img/popular-products/3.png" alt="Garage with road"></div>
+              <p class="item-title">Гараж №1 Полесье с дорогой в коробке</p>
+              <div class="price d-flex justify-content-between align-items-center">
+                <span>1790 ₽</span>
+                <a class="cart" href="#"><img src="img/popular-products/cart.png" alt="Cart"></a>
+              </div>
+              <a class="wish" href="#"><img src="img/popular-products/wish.png" alt="Wish"></a>
+            </div>
+          </div>
+          <div class="product-item d-flex">
+            <div class="item-inner d-flex justify-content-around flex-wrap flex-column align-items-center">
+              <div><img class="product-img" src="img/popular-products/4.png" alt="Robo transformer"></div>
+              <p class="item-title">Робо трансформер ТОБОТ Тобот GIGA 7</p>
+              <div class="price d-flex justify-content-between align-items-center">
+                <span>3999 ₽</span>
+                <a class="cart" href="#"><img src="img/popular-products/cart.png" alt="Cart"></a>
+              </div>
+              <a class="wish" href="#"><img src="img/popular-products/wish.png" alt="Wish"></a>
+            </div>
+          </div>
+          <div class="product-item d-flex">
+            <div class="item-inner d-flex justify-content-around flex-wrap flex-column align-items-center">
+              <div><img class="product-img" src="img/popular-products/5.png" alt="Hot Wheels car"></div>
+              <p class="item-title">Машина Hot Wheels РУ Off Road Truck</p>
+              <div class="price d-flex justify-content-between align-items-center">
+                <span>1700 ₽</span>
+                <a class="cart" href="#"><img src="img/popular-products/cart.png" alt="Cart"></a>
+              </div>
+              <a class="wish" href="#"><img src="img/popular-products/wish.png" alt="Wish"></a>
+            </div>
+          </div>
+          <div class="product-item d-flex">
+            <div class="item-inner d-flex justify-content-around flex-wrap flex-column align-items-center">
+              <div><img class="product-img" src="img/popular-products/6.png" alt="SLUBAN constructor"></div>
+              <p class="item-title">Конструктор SLUBAN Розовая мечта Магазин мороженого</p>
+              <div class="price d-flex justify-content-between align-items-center">
+                <span>1000 ₽</span>
+                <a class="cart" href="#"><img src="img/popular-products/cart.png" alt="Cart"></a>
+              </div>
+              <a class="wish" href="#"><img src="img/popular-products/wish.png" alt="Wish"></a>
+            </div>
+          </div>
+          <div class="product-item d-flex">
+            <div class="item-inner d-flex justify-content-around flex-wrap flex-column align-items-center">
+              <div><img class="product-img" src="img/popular-products/7.png" alt="Three cats toy"></div>
+              <p class="item-title">Игрушка мягкая Три Кота Коржик со звуком</p>
+              <div class="price d-flex justify-content-between align-items-center">
+                <span>1500 ₽</span>
+                <a class="cart" href="#"><img src="img/popular-products/cart.png" alt="Cart"></a>
+              </div>
+              <a class="wish" href="#"><img src="img/popular-products/wish.png" alt="Wish"></a>
+            </div>
+          </div>
+          <div class="product-item d-flex">
+            <div class="item-inner d-flex justify-content-around flex-wrap flex-column align-items-center">
+              <div><img class="product-img" src="img/popular-products/8.png" alt="Aurora mouse"></div>
+              <p class="item-title">Игрушка мягкая Aurora Мышь</p>
+              <div class="price d-flex justify-content-between align-items-center">
+                <span>599 ₽</span>
+                <a class="cart" href="#"><img src="img/popular-products/cart.png" alt="Cart"></a>
+              </div>
+              <a class="wish" href="#"><img src="img/popular-products/wish.png" alt="Wish"></a>
+            </div>
+          </div>
+
+          <a href="#" class="buy-btn justify-content-around d-flex align-items-center"> 
+            <span>Перейти в каталог</span><i class="fas fa-arrow-alt-circle-right"></i>
+          </a>
+
+        </div> 
+      </div>
+    </div>
+
+    <div id="special-offers" class="special container d-flex justify-content-center align-items-center flex-wrap">
+      <div class="left">
+        <h2 class="yellow-title">Акции и спецпредложения</h2>
+      </div>
+      <div class="right right d-flex flex-wrap justify-content-center">
+        <div class="special-offers-item d-flex">
+          <div class="inner-padding d-flex justify-content-around flex-column">
+              <div class="large item-content d-flex justify-content-center align-items-center flex-column">
+                <img src="img/special-offers/kitty.png">
+                <p class="date">23 ФЕВРАЛЯ 2019</p>
+                <p class="desc">Супер предложение! Разыгрываем будильник Hello Kitty</p>
+              </div>
+              <div class="small item-content d-flex align-items-center">
+                <img src="img/special-offers/lego.png">
+                <p class="date">25 ФЕВРАЛЯ 2019</p>
+                <p class="desc">Скидки до 30% на товары от бренда LEGO</p>
+              </div>
+              <div class="small item-content d-flex align-items-center">
+                <img src="img/special-offers/chopper.png">
+                <p class="date">26 ФЕВРАЛЯ 2019</p>
+                <p class="desc">Скидки до 30% на товары от бренда Dickie</p>
+              </div>
+
+          </div>
+        </div>
+        <div class="special-offers-item d-flex">
+          <div class="inner-padding d-flex justify-content-around flex-column">
+            <div class="small item-content d-flex align-items-center">
+              <img src="img/special-offers/plane.png">
+              <p class="date">26 ФЕВРАЛЯ 2019</p>
+              <p class="desc">Супер предложение! Скидка на Самолет Pilotage 50%</p>
+            </div>
+            <div class="small item-content d-flex align-items-center">
+              <img src="img/special-offers/scooter.png">
+              <p class="date">28 ФЕВРАЛЯ 2019</p>
+              <p class="desc">Акция! Покупая NERF Elite Disruptor 6 стрел в подарок</p>
+            </div>
+            <div class="large item-content justify-content-center d-flex align-items-center flex-column">
+              <p class="date">26 ФЕВРАЛЯ 2019</p>
+              <p class="desc">Покупая Басика, Вы получите набор игрушек  «Лесята» в подарок!</p>
+            </div>
+          </div>
+        </div>
+        <div class="special-offers-item d-flex">
+          <div class="inner-padding d-flex justify-content-around flex-column">
+          <div class="small item-content d-flex align-items-center">
+            <img src="img/special-offers/gun.png">
+            <p class="date">29 ФЕВРАЛЯ 2019</p>
+            <p class="desc">Акция! Покупая NERF Elite Disruptor 6 стрел в подарок</p>
+          </div>
+          <div class="large item-content justify-content-center d-flex align-items-center flex-column">
+            <img src="img/special-offers/transformer.png">
+            <p class="date">24 ФЕВРАЛЯ 2019</p>
+            <p class="desc">Акция, при покупке трансформера, на второй действует СКИДКА 50%</p>
+          </div>
+          <div class="small item-content d-flex align-items-center">
+            <img src="img/special-offers/lol.png">
+            <p class="date">25 ФЕВРАЛЯ 2019</p>
+            <p class="desc">Акция! При покупке куклы LOL вторая кукла в подарок</p>
+          </div>
+        </div>
+        </div>
+
+        <a href="#" class="buy-btn justify-content-around d-flex align-items-center"> 
+          <span>Все акции</span><i class="fas fa-arrow-alt-circle-right"></i>
+        </a>
       </div>
     </div>
     

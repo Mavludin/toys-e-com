@@ -68,11 +68,12 @@ i {
   cursor: pointer;
 }
 
-header, #brands-bg, #brands #right #play-doh, #brands #right #beyblade, #brands #right #lol, #brands #right #lego, footer {
+header, #brands-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands #lego, #products, footer {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100%;
 }
 
 #top-header {
@@ -375,6 +376,12 @@ header, #brands-bg, #brands #right #play-doh, #brands #right #beyblade, #brands 
 }
 
 @media screen and (max-width: 991px) {
+  .owl-theme .buy-btn {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
   .owl-theme {
     width: 100%;
     text-align: center;
@@ -458,6 +465,12 @@ header, #brands-bg, #brands #right #play-doh, #brands #right #beyblade, #brands 
   outline: unset;
   font-weight: 600;
   margin-top: 50px;
+  transition: .2s;
+}
+
+.buy-btn:hover {
+  opacity: 0.8;
+  color: #FDFFFF;
 }
 
 @media screen and (max-width: 991px) {
@@ -465,7 +478,6 @@ header, #brands-bg, #brands #right #play-doh, #brands #right #beyblade, #brands 
     width: 336px;
     height: 55px;
     margin-top: 18px;
-    margin: 0 auto;
   }
 }
 
@@ -477,7 +489,7 @@ header, #brands-bg, #brands #right #play-doh, #brands #right #beyblade, #brands 
   height: 45px;
   background: linear-gradient(180deg, #E65246 0%, #ED7154 88.54%, #EB7154 100%);
   border-radius: 50%;
-  padding: 5px 0;
+  padding: 5px;
 }
 
 @media screen and (max-width: 991px) {
@@ -487,10 +499,6 @@ header, #brands-bg, #brands #right #play-doh, #brands #right #beyblade, #brands 
     height: 32px;
     padding: 5px 0;
   }
-}
-
-.buy-btn span {
-  width: 80%;
 }
 
 .owl-dots {
@@ -621,14 +629,77 @@ main {
   }
 }
 
-#brands {
-  margin-top: -166px;
+.special {
   position: relative;
   z-index: 99;
   box-shadow: 0px 5px 30px rgba(91, 24, 31, 0.15);
   border-radius: 20px;
   height: 730px;
   padding: 0;
+}
+
+.left {
+  background: #D2162A;
+  border-radius: 20px 0px 0px 20px;
+  width: 10%;
+  height: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  .left {
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+.yellow-title {
+  font-family: 'Ultima Pro', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 100%;
+  color: #FEE43A;
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 500px;
+  height: 30px;
+  left: -190px;
+  top: 30%;
+}
+
+@media screen and (max-width: 991px) {
+  .yellow-title {
+    position: unset;
+    transform: unset;
+    text-align: center;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .yellow-title {
+    font-size: 26px;
+    height: auto;
+  }
+}
+
+.right {
+  width: 90%;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  padding: 8px;
+  background: #FFFFFF;
+}
+
+@media screen and (max-width: 991px) {
+  .right {
+    width: 100%;
+  }
+}
+
+#brands {
+  margin-top: -166px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -645,102 +716,36 @@ main {
   }
 }
 
-#brands #left {
-  background: #D2162A;
-  border-radius: 20px 0px 0px 20px;
-  width: 10%;
-  height: 100%;
-  position: relative;
-}
-
-@media screen and (max-width: 991px) {
-  #brands #left {
-    border-radius: 20px 20px 0px 0px;
-    padding: 10px;
-    width: 100%;
-  }
-}
-
-#brands #left h2 {
-  font-family: 'Ultima Pro', sans-serif;
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 100%;
-  color: #FEE43A;
-  transform: rotate(-90deg);
-  position: absolute;
-  width: 325px;
-  height: 30px;
-  left: -110px;
-  top: 30%;
-}
-
-@media screen and (max-width: 991px) {
-  #brands #left h2 {
-    position: unset;
-    transform: unset;
-    text-align: center;
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 468px) {
-  #brands #left h2 {
-    font-size: 26px;
-    height: auto;
-  }
-}
-
-#brands #right {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90%;
-  height: 100%;
-  justify-content: center;
-  border-radius: 0 20px 20px 0;
-  padding: 8px;
-  background: #FFFFFF;
-}
-
-@media screen and (max-width: 991px) {
-  #brands #right {
-    width: 100%;
-  }
-}
-
-#brands #right > div {
+#brands .brand-item {
   width: 50%;
-  padding: 8px;
 }
 
 @media screen and (max-width: 1199px) {
-  #brands #right > div {
+  #brands .brand-item {
     height: 240px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right > div {
+  #brands .brand-item {
     width: 100%;
     height: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #brands #right > div {
+  #brands .brand-item {
     width: 50%;
   }
 }
 
-#brands #right > div > div {
-  display: flex;
-  align-items: center;
+#brands .brand-item .item-content {
   height: 100%;
   border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
-  #brands #right > div > div {
+  #brands .brand-item .item-content {
     flex-wrap: wrap;
     flex-direction: column;
     padding: 20px;
@@ -748,12 +753,12 @@ main {
 }
 
 @media screen and (max-width: 468px) {
-  #brands #right > div > div {
+  #brands .brand-item .item-content {
     padding: 10px;
   }
 }
 
-#brands #right > div > div h4 {
+#brands .brand-item .item-content h4 {
   font-family: 'Ultima Pro', sans-serif;
   font-weight: 900;
   font-size: 30px;
@@ -763,42 +768,42 @@ main {
 }
 
 @media screen and (max-width: 1199px) {
-  #brands #right > div > div h4 {
+  #brands .brand-item .item-content h4 {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #brands #right > div > div h4 {
+  #brands .brand-item .item-content h4 {
     font-size: 26px;
   }
 }
 
 @media screen and (max-width: 468px) {
-  #brands #right > div > div h4 {
+  #brands .brand-item .item-content h4 {
     font-size: 20px;
   }
 }
 
-#brands #right > div > div p {
+#brands .brand-item .item-content p {
   font-size: 16px;
   line-height: 24px;
   color: #FDFFFF;
 }
 
 @media screen and (max-width: 1199px) {
-  #brands #right > div > div p {
+  #brands .brand-item .item-content p {
     line-height: 20px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #brands #right > div > div p {
+  #brands .brand-item .item-content p {
     display: none;
   }
 }
 
-#brands #right > div > div > div {
+#brands .brand-item .item-content > div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -806,18 +811,18 @@ main {
   width: 50%;
 }
 
-#brands #right > div > div > div:first-of-type {
+#brands .brand-item .item-content > div:first-of-type {
   align-items: center;
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right > div > div > div:first-of-type {
+  #brands .brand-item .item-content > div:first-of-type {
     width: 30%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #brands #right > div > div > div:first-of-type {
+  #brands .brand-item .item-content > div:first-of-type {
     width: 100%;
     height: 50%;
     text-align: left;
@@ -826,154 +831,154 @@ main {
 }
 
 @media screen and (max-width: 468px) {
-  #brands #right > div > div > div:first-of-type {
+  #brands .brand-item .item-content > div:first-of-type {
     height: 60%;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  #brands #right > div > div > div:first-of-type img {
+  #brands .brand-item .item-content > div:first-of-type img {
     width: 86%;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right > div > div > div:first-of-type img {
+  #brands .brand-item .item-content > div:first-of-type img {
     width: auto;
   }
 }
 
 @media screen and (max-width: 786px) {
-  #brands #right > div > div > div:first-of-type img:first-of-type {
+  #brands .brand-item .item-content > div:first-of-type img:first-of-type {
     width: 120px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right > div > div > div:first-of-type img:last-of-type {
+  #brands .brand-item .item-content > div:first-of-type img:last-of-type {
     display: none;
   }
 }
 
-#brands #right > div > div > div:last-of-type {
+#brands .brand-item .item-content > div:last-of-type {
   padding: 16px 0;
 }
 
 @media screen and (max-width: 1199px) {
-  #brands #right > div > div > div:last-of-type {
+  #brands .brand-item .item-content > div:last-of-type {
     width: 60%;
     padding: 10px 0;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right > div > div > div:last-of-type {
+  #brands .brand-item .item-content > div:last-of-type {
     width: 70%;
     height: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #brands #right > div > div > div:last-of-type {
+  #brands .brand-item .item-content > div:last-of-type {
     width: 100%;
     height: 50%;
   }
 }
 
 @media screen and (max-width: 468px) {
-  #brands #right > div > div > div:last-of-type {
+  #brands .brand-item .item-content > div:last-of-type {
     height: 40%;
   }
 }
 
-#brands #right > div > div > div:last-of-type a {
+#brands .brand-item .item-content > div:last-of-type a {
   text-transform: uppercase;
 }
 
 @media screen and (max-width: 468px) {
-  #brands #right > div > div > div:last-of-type a {
+  #brands .brand-item .item-content > div:last-of-type a {
     font-weight: bold;
     font-size: 14px;
   }
 }
 
-#brands #right > div > div > div:last-of-type a img {
+#brands .brand-item .item-content > div:last-of-type a img {
   margin-left: 5px;
   margin-top: -4px;
 }
 
-#brands #right .buy-btn {
+#brands .buy-btn {
   margin-top: 26px;
 }
 
 @media screen and (max-width: 1199px) {
-  #brands #right .buy-btn {
+  #brands .buy-btn {
     margin-top: unset;
   }
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right .buy-btn {
+  #brands .buy-btn {
     margin-top: 20px;
   }
 }
 
-#brands #right #play-doh {
+#brands #play-doh {
   background-image: url("../../img/popular-brands/play-doh-bg.png");
 }
 
-#brands #right #play-doh > div > img:last-of-type {
+#brands #play-doh > div > img:last-of-type {
   margin-left: -17px;
 }
 
 @media screen and (max-width: 1199px) {
-  #brands #right #play-doh > div > img:last-of-type {
+  #brands #play-doh > div > img:last-of-type {
     margin-left: -22px;
   }
 }
 
-#brands #right #beyblade {
+#brands #beyblade {
   background-image: url("../../img/popular-brands/beyblade-bg.png");
 }
 
-#brands #right #beyblade > div:first-of-type {
+#brands #beyblade > div:first-of-type {
   justify-content: flex-end;
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right #beyblade > div:first-of-type {
+  #brands #beyblade > div:first-of-type {
     justify-content: center;
   }
 }
 
 @media screen and (min-width: 991px) {
-  #brands #right #beyblade > div > img:first-of-type {
+  #brands #beyblade > div > img:first-of-type {
     display: none;
   }
 }
 
-#brands #right #lol {
+#brands #lol {
   background-image: url("../../img/popular-brands/lol-bg.png");
 }
 
-#brands #right #lol > div:first-of-type {
+#brands #lol > div:first-of-type {
   justify-content: flex-end;
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right #lol > div:first-of-type {
+  #brands #lol > div:first-of-type {
     justify-content: center;
   }
 }
 
-#brands #right #lol > div:first-of-type > img:first-of-type {
+#brands #lol > div:first-of-type > img:first-of-type {
   position: absolute;
   top: 35px;
   left: 8px;
 }
 
 @media screen and (max-width: 1199px) {
-  #brands #right #lol > div:first-of-type > img:first-of-type {
+  #brands #lol > div:first-of-type > img:first-of-type {
     top: 70px;
     left: 28px;
     width: 20%;
@@ -981,7 +986,7 @@ main {
 }
 
 @media screen and (max-width: 991px) {
-  #brands #right #lol > div:first-of-type > img:first-of-type {
+  #brands #lol > div:first-of-type > img:first-of-type {
     position: unset;
     width: auto;
     transform: rotate(46deg);
@@ -989,21 +994,227 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  #brands #right #lol > div:first-of-type > img:first-of-type {
+  #brands #lol > div:first-of-type > img:first-of-type {
     position: absolute;
     top: 0;
   }
 }
 
 @media screen and (max-width: 468px) {
-  #brands #right #lol > div:first-of-type > img:first-of-type {
+  #brands #lol > div:first-of-type > img:first-of-type {
     top: -10px;
     left: 15px;
   }
 }
 
-#brands #right #lego {
+#brands #lego {
   background-image: url("../../img/popular-brands/lego-bg.png");
+}
+
+#products {
+  background-image: url("../../img/popular-products/large-bg.png");
+  margin-top: 40px;
+  padding: 120px 0;
+}
+
+@media screen and (max-width: 991px) {
+  #products {
+    margin-top: 20px;
+    padding: 140px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #products {
+    margin-top: 20px;
+    padding: 110px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #products {
+    background-image: url("../../img/popular-products/mobile-bg.png");
+  }
+}
+
+#products h2 {
+  font-family: 'Ultima Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+  #products h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #products h2 {
+    font-size: 26px;
+  }
+}
+
+#products h2 span {
+  color: #48B4DD;
+}
+
+@media screen and (max-width: 768px) {
+  #products #products-inner {
+    padding: 5px;
+  }
+}
+
+#products #products-inner .product-item {
+  width: 25%;
+  padding: 10px;
+  height: 385px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  #products #products-inner .product-item {
+    width: 50%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #products #products-inner .product-item {
+    height: 340px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #products #products-inner .product-item {
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #products #products-inner .product-item:nth-child(n+5) {
+    display: none !important;
+  }
+}
+
+#products #products-inner .product-item .item-inner {
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 25px rgba(29, 52, 79, 0.15);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#products #products-inner .product-item .product-img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #products #products-inner .product-item .product-img {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #products #products-inner .product-item .product-img {
+    height: 120px;
+  }
+}
+
+#products #products-inner .product-item .item-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #172029;
+}
+
+@media screen and (max-width: 414px) {
+  #products #products-inner .product-item .item-title {
+    font-size: 14px;
+  }
+}
+
+#products #products-inner .product-item .wish {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  top: 3%;
+  right: 5%;
+}
+
+#products #products-inner .product-item .price {
+  width: 100%;
+}
+
+#products #products-inner .product-item .price .cart {
+  background-color: rgba(0, 158, 224, 0.1);
+  border-radius: 22px;
+  width: 70px;
+  text-align: center;
+  padding: 12px;
+  line-height: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #products #products-inner .product-item .price .cart {
+    width: auto;
+  }
+}
+
+#products #products-inner .product-item .price span {
+  font-family: 'Ultima Pro', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 100%;
+  color: #172029;
+}
+
+@media screen and (max-width: 768px) {
+  #products #products-inner .product-item .price span {
+    font-size: 20px;
+  }
+}
+
+.special-offers-item {
+  width: 30%;
+  height: 100%;
+}
+
+.special-offers-item .inner-padding {
+  width: 100%;
+}
+
+.special-offers-item .large {
+  box-shadow: 0px 5px 15px rgba(29, 52, 79, 0.15);
+  border-radius: 10px;
+  height: 50%;
+}
+
+.special-offers-item .small {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 13px rgba(29, 52, 79, 0.1);
+  border-radius: 10px;
+  height: 25%;
+}
+
+.special-offers-item .date {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6C869E;
+}
+
+.special-offers-item .desc {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
 }
 
 footer {

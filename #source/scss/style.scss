@@ -71,6 +71,7 @@ i {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	height: 100%;
 }
 
 #top-header {
@@ -372,6 +373,12 @@ i {
 	width: 60%;	
 	position: relative;
 
+	.buy-btn {
+		@media screen and (max-width: 991px) {
+			margin: 0 auto;
+		}
+	}
+
 	@media screen and (max-width: 991px) {
 		width: 100%;
 		text-align: center;
@@ -446,12 +453,17 @@ i {
     outline: unset;
     font-weight: 600;
     margin-top: 50px;
+    transition: .2s;
+
+    &:hover {
+    	opacity: 0.8;
+    	color: #FDFFFF;
+    }
 
 	@media screen and (max-width: 991px) {
 		width: 336px;
 		height: 55px;
 		margin-top: 18px;
-		margin: 0 auto;
 	}
 
     i {
@@ -462,7 +474,7 @@ i {
 	    height: 45px;
 	    background: linear-gradient(180deg, #E65246 0%, #ED7154 88.54%, #EB7154 100%);
 	    border-radius: 50%;
-	    padding: 5px 0;
+	    padding: 5px;
 
 		@media screen and (max-width: 991px) {
 			font-size: 1.6em;
@@ -472,9 +484,6 @@ i {
 		}
 	}
 
-	span {
-		width: 80%;
-	}
 }
 
 .owl-dots {
@@ -593,14 +602,74 @@ main {
 
 }
 
-#brands {
-	margin-top: -166px;
+.special {
 	position: relative;
 	z-index: 99;
 	box-shadow: 0px 5px 30px rgba(91, 24, 31, 0.15);
 	border-radius: 20px;
 	height: 730px;
 	padding: 0;
+}
+
+.left {
+
+	background: #D2162A;
+	border-radius: 20px 0px 0px 20px;
+	width: 10%;
+	height: 100%;
+	position: relative;
+
+	@media screen and (max-width: 991px) {
+		border-radius: 20px 20px 0px 0px;
+		padding: 10px;
+		width: 100%;
+
+	}
+}
+
+.yellow-title {
+
+	font-family: 'Ultima Pro', sans-serif;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 100%;
+	color: #FEE43A;
+	transform: rotate(-90deg);
+	position: absolute;
+	width: 500px;
+	height: 30px;
+	left: -190px;
+	top: 30%;
+
+	@media screen and (max-width: 991px) {
+		position: unset;
+		transform: unset;
+		text-align: center;
+		width: auto;
+	}
+
+	@media screen and (max-width: 468px) {
+		font-size: 26px;
+		height: auto;
+	}
+}
+
+.right {
+	
+	width: 90%;
+	height: 100%;
+	border-radius: 0 20px 20px 0;
+	padding: 8px;
+	background: #FFFFFF;
+
+	@media screen and (max-width: 991px) {
+		width: 100%;
+	}
+
+}
+
+#brands {
+	margin-top: -166px;
 
 	@media screen and (max-width: 1199px) {
 		height: 590px;
@@ -612,326 +681,453 @@ main {
 		padding-bottom: 20px;
 	}
 
-	#left {
 
-		background: #D2162A;
-		border-radius: 20px 0px 0px 20px;
-		width: 10%;
-		height: 100%;
-		position: relative;
+	.brand-item {
+		width: 50%;
+
+		@media screen and (max-width: 1199px) {
+			height: 240px
+		}
 
 		@media screen and (max-width: 991px) {
-			border-radius: 20px 20px 0px 0px;
-			padding: 10px;
 			width: 100%;
+			height: auto;
+		}
 
-		}		
+		@media screen and (max-width: 768px) {
+			width: 50%;
+		}
 
-		h2 {
-			font-family: 'Ultima Pro', sans-serif;
-			font-weight: 900;
-			font-size: 30px;
-			line-height: 100%;
-			color: #FEE43A;
-			transform: rotate(-90deg);
-			position: absolute;
-			width: 325px;
-			height: 30px;
-			left: -110px;
-			top: 30%;
+		.item-content{
+			height: 100%;
+			border-radius: 10px;
 
-			@media screen and (max-width: 991px) {
-				position: unset;
-				transform: unset;
-				text-align: center;
-				width: auto;
+			@media screen and (max-width: 768px) {
+				flex-wrap: wrap;
+				flex-direction: column;
+				padding: 20px;
 			}
 
 			@media screen and (max-width: 468px) {
-				font-size: 26px;
-				height: auto;
-			}
-		}
-	}
-
-	#right {
-		
-		display: flex;
-		flex-wrap: wrap;
-		width: 90%;
-		height: 100%;
-		justify-content: center;
-		border-radius: 0 20px 20px 0;
-		padding: 8px;
-		background: #FFFFFF;
-
-		@media screen and (max-width: 991px) {
-			width: 100%;
-		}
-
-		>div {
-			width: 50%;
-			padding: 8px;
-
-			@media screen and (max-width: 1199px) {
-				height: 240px
+				padding: 10px;
 			}
 
-			@media screen and (max-width: 991px) {
-				width: 100%;
-				height: auto;
+			h4 {
+				font-family: 'Ultima Pro', sans-serif;
+				font-weight: 900;
+				font-size: 30px;
+				line-height: 100%;
+				color: #FDFFFF;
+				margin-bottom: 10px;
+
+				@media screen and (max-width: 1199px) {
+					font-size: 24px;
+				}
+
+				@media screen and (max-width: 768px) {
+					font-size: 26px;
+				}
+
+				@media screen and (max-width: 468px) {
+					font-size: 20px;
+				}
+
 			}
 
-			@media screen and (max-width: 768px) {
-				width: 50%;
+			p {
+				font-size: 16px;
+				line-height: 24px;
+				color: #FDFFFF;
+
+				@media screen and (max-width: 1199px) {
+					line-height: 20px;
+				}
+
+				@media screen and (max-width: 768px) {
+					display: none;
+				}
+
 			}
 
 			>div {
+
 				display: flex;
-				align-items: center;
+				flex-direction: column;
+
+				justify-content: space-around;
 				height: 100%;
-				border-radius: 10px;
+				width: 50%;
 
-				@media screen and (max-width: 768px) {
-					flex-wrap: wrap;
-					flex-direction: column;
-					padding: 20px;
-				}
+				&:first-of-type {
+					align-items: center;
 
-				@media screen and (max-width: 468px) {
-					padding: 10px;
-				}
-
-				h4 {
-					font-family: 'Ultima Pro', sans-serif;
-					font-weight: 900;
-					font-size: 30px;
-					line-height: 100%;
-					color: #FDFFFF;
-					margin-bottom: 10px;
-
-					@media screen and (max-width: 1199px) {
-						font-size: 24px;
+					@media screen and (max-width: 991px) {
+						width: 30%;
 					}
 
 					@media screen and (max-width: 768px) {
-						font-size: 26px;
+						width: 100%;
+						height: 50%;
+						text-align: left;
+						align-items: flex-start;
 					}
 
 					@media screen and (max-width: 468px) {
-						font-size: 20px;
+						height: 60%;
+					}
+
+					img {
+						@media screen and (max-width: 1199px) {
+							width: 86%;
+						}
+						@media screen and (max-width: 991px) {
+							width: auto;
+						}
+
+						&:first-of-type {
+
+							@media screen and (max-width: 786px) {
+								width: 120px;
+							}
+						}
+
+						&:last-of-type {
+
+							@media screen and (max-width: 991px) {
+								display: none;
+							}
+						}
 					}
 
 				}
 
-				p {
-					font-size: 16px;
-					line-height: 24px;
-					color: #FDFFFF;
+				&:last-of-type {
+
+					padding: 16px 0;
 
 					@media screen and (max-width: 1199px) {
-						line-height: 20px;
+						width: 60%;
+						padding: 10px 0;
+					}
+
+					@media screen and (max-width: 991px) {
+						width: 70%;
+						height: auto;
 					}
 
 					@media screen and (max-width: 768px) {
-						display: none;
+						width: 100%;
+						height: 50%;
 					}
 
-				}
+					@media screen and (max-width: 468px) {
+						height: 40%;
+					}
 
-				>div {
+					a {
 
-					display: flex;
-					flex-direction: column;
-
-					justify-content: space-around;
-					height: 100%;
-					width: 50%;
-
-					&:first-of-type {
-						align-items: center;
-
-						@media screen and (max-width: 991px) {
-							width: 30%;
-						}
-
-						@media screen and (max-width: 768px) {
-							width: 100%;
-							height: 50%;
-							text-align: left;
-							align-items: flex-start;
-						}
+						text-transform: uppercase;
 
 						@media screen and (max-width: 468px) {
-							height: 60%;
+							font-weight: bold;
+							font-size: 14px;
 						}
 
 						img {
-							@media screen and (max-width: 1199px) {
-								width: 86%;
-							}
-							@media screen and (max-width: 991px) {
-								width: auto;
-							}
-
-							&:first-of-type {
-
-								@media screen and (max-width: 786px) {
-									width: 120px;
-								}
-							}
-
-							&:last-of-type {
-
-								@media screen and (max-width: 991px) {
-									display: none;
-								}
-							}
-						}
-
-					}
-
-					&:last-of-type {
-
-						padding: 16px 0;
-
-						@media screen and (max-width: 1199px) {
-							width: 60%;
-							padding: 10px 0;
-						}
-
-						@media screen and (max-width: 991px) {
-							width: 70%;
-							height: auto;
-						}
-
-						@media screen and (max-width: 768px) {
-							width: 100%;
-							height: 50%;
-						}
-
-						@media screen and (max-width: 468px) {
-							height: 40%;
-						}
-
-						a {
-
-							text-transform: uppercase;
-
-							@media screen and (max-width: 468px) {
-								font-weight: bold;
-								font-size: 14px;
-							}
-
-							img {
-								margin-left: 5px;
-								margin-top: -4px;
-							}
+							margin-left: 5px;
+							margin-top: -4px;
 						}
 					}
-
 				}
 
 			}
 
 		}
 
-		.buy-btn {
-			margin-top: 26px;
+	}
 
-			@media screen and (max-width: 1199px) {
-				margin-top: unset;
-			}
+	.buy-btn {
+		margin-top: 26px;
 
-			@media screen and (max-width: 991px) {
-				margin-top: 20px;
-			}
+		@media screen and (max-width: 1199px) {
+			margin-top: unset;
 		}
 
-		#play-doh {
-			background-image: url('../../img/popular-brands/play-doh-bg.png');
-			@extend %bgImage;
-
-			>div>img:last-of-type {
-				margin-left: -17px;
-
-				@media screen and (max-width: 1199px) {
-					margin-left: -22px;
-				}
-			}		
-		}
-
-		#beyblade {
-			>div:first-of-type {
-				justify-content: flex-end;
-
-				@media screen and (max-width: 991px) {
-					justify-content: center;
-				}
-
-			}
-
-			background-image: url('../../img/popular-brands/beyblade-bg.png');
-			@extend %bgImage;
-
-			>div>img:first-of-type {
-				@media screen and (min-width: 991px) {
-					display: none;
-				}
-			}
-		}
-
-		#lol {
-
-			>div:first-of-type {
-				justify-content: flex-end;
-
-				@media screen and (max-width: 991px) {
-					justify-content: center;
-				}
-
-			}
-
-			background-image: url('../../img/popular-brands/lol-bg.png');
-			@extend %bgImage;
-
-			>div:first-of-type>img:first-of-type {
-				position: absolute;
-				top: 35px;
-				left: 8px;
-
-				@media screen and (max-width: 1199px) {
-					top: 70px;
-					left: 28px;
-					width: 20%;
-				}
-
-				@media screen and (max-width: 991px) {
-					position: unset;
-					width: auto;
-					transform: rotate(46deg);
-				}
-
-				@media screen and (max-width: 768px) {
-					position: absolute;
-					top: 0;
-				}
-
-				@media screen and (max-width: 468px) {
-					top: -10px;
-					left: 15px;
-				}
-
-			}
-
-		}
-
-		#lego {
-			background-image: url('../../img/popular-brands/lego-bg.png');
-			@extend %bgImage;
+		@media screen and (max-width: 991px) {
+			margin-top: 20px;
 		}
 	}
 
+	#play-doh {
+		background-image: url('../../img/popular-brands/play-doh-bg.png');
+		@extend %bgImage;
+
+		>div>img:last-of-type {
+			margin-left: -17px;
+
+			@media screen and (max-width: 1199px) {
+				margin-left: -22px;
+			}
+		}		
+	}
+
+	#beyblade {
+		>div:first-of-type {
+			justify-content: flex-end;
+
+			@media screen and (max-width: 991px) {
+				justify-content: center;
+			}
+
+		}
+
+		background-image: url('../../img/popular-brands/beyblade-bg.png');
+		@extend %bgImage;
+
+		>div>img:first-of-type {
+			@media screen and (min-width: 991px) {
+				display: none;
+			}
+		}
+	}
+
+	#lol {
+
+		>div:first-of-type {
+			justify-content: flex-end;
+
+			@media screen and (max-width: 991px) {
+				justify-content: center;
+			}
+
+		}
+
+		background-image: url('../../img/popular-brands/lol-bg.png');
+		@extend %bgImage;
+
+		>div:first-of-type>img:first-of-type {
+			position: absolute;
+			top: 35px;
+			left: 8px;
+
+			@media screen and (max-width: 1199px) {
+				top: 70px;
+				left: 28px;
+				width: 20%;
+			}
+
+			@media screen and (max-width: 991px) {
+				position: unset;
+				width: auto;
+				transform: rotate(46deg);
+			}
+
+			@media screen and (max-width: 768px) {
+				position: absolute;
+				top: 0;
+			}
+
+			@media screen and (max-width: 468px) {
+				top: -10px;
+				left: 15px;
+			}
+
+		}
+
+	}
+
+	#lego {
+		background-image: url('../../img/popular-brands/lego-bg.png');
+		@extend %bgImage;
+	}
+
+}
+
+#products {
+
+	background-image: url('../../img/popular-products/large-bg.png');
+	@extend %bgImage;
+	margin-top: 40px;
+	padding: 120px 0;
+
+	@media screen and (max-width: 991px) {
+		margin-top: 20px;
+		padding: 140px 0 100px 0;
+	}
+
+	@media screen and (max-width: 360px) {
+		margin-top: 20px;
+		padding: 110px 0 100px 0;
+	}
+
+	@media screen and (max-width: 360px) {
+		background-image: url('../../img/popular-products/mobile-bg.png');
+	}
+
+	h2 {
+		font-family: 'Ultima Pro', sans-serif;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 100%;
+		margin-bottom: 24px;
+		text-align: center;
+		color: #FFFFFF;
+
+		@media screen and (max-width: 600px) {
+			font-size: 30px;
+		}
+
+		@media screen and (max-width: 414px) {
+			font-size: 26px;
+		}
+
+		span {
+			color: #48B4DD;
+		}
+	}
+
+	#products-inner {
+
+		@media screen and (max-width: 768px) {
+			padding: 5px;
+		}
+
+		.product-item {
+			width: 25%;
+			padding: 10px;
+			height: 385px;
+			border-radius: 20px;
+
+			@media screen and (max-width: 991px) {
+				width: 50%;
+				height: 400px;
+			}
+
+			@media screen and (max-width: 768px) {
+				height: 340px;
+				padding: 5px;
+			}
+
+			@media screen and (max-width: 414px) {
+				height: 290px;
+			}
+
+			@media screen and (max-width: 360px) {
+				&:nth-child(n+5) {
+					display: none !important;
+				}
+			}
+
+			.item-inner {
+				background-color: #FFFFFF;
+				box-shadow: 0px 5px 25px rgba(29, 52, 79, 0.15);
+				width: 100%;
+				height: 100%;
+				border-radius: 20px;
+				padding: 10px;
+			}
+
+			.product-img {
+				width: 100%;
+
+				@media screen and (max-width: 768px) {
+					height: 160px;
+				}
+
+				@media screen and (max-width: 414px) {
+					height: 120px;
+				}
+			}
+
+			.item-title {
+				font-size: 16px;
+				line-height: 20px;
+				color: #172029;
+
+				@media screen and (max-width: 414px) {
+					font-size: 14px;
+				}
+			}
+
+			.wish {
+				position: absolute;
+				top: 2%;
+				right: 1%;
+			    top: 3%;
+				right: 5%;
+			}
+
+			.price {
+
+				width: 100%;
+
+				.cart {
+					background-color: rgba(0,158,224, 0.1);
+					border-radius: 22px;
+					width: 70px;
+					text-align: center;
+					padding: 12px;
+					line-height: 0;
+
+					@media screen and (max-width: 768px) {
+						width: auto;
+					}
+				}
+
+				span {
+					font-family: 'Ultima Pro', sans-serif;
+					font-style: normal;
+					font-weight: 900;
+					font-size: 30px;
+					line-height: 100%;
+					color: #172029;
+
+					@media screen and (max-width: 768px) {
+						font-size: 20px;
+					}
+				}
+
+			}
+
+		}
+	}
+
+}
+
+.special-offers-item {
+	width: 30%;
+	height: 100%;
+
+	.inner-padding {
+		width: 100%;
+	}
+
+	.large {
+		box-shadow: 0px 5px 15px rgba(29, 52, 79, 0.15);
+		border-radius: 10px;
+		height: 50%;
+	}
+
+	.small {
+		background: #FFFFFF;
+		box-shadow: 0px 4px 13px rgba(29, 52, 79, 0.1);
+		border-radius: 10px;
+		height: 25%;
+	}
+
+	.date {
+		font-size: 14px;
+		line-height: 20px;
+		color: #6C869E;
+	}
+
+	.desc {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		color: black;	
+	}
 }
 
 footer {
