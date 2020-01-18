@@ -69,7 +69,7 @@ i {
   cursor: pointer;
 }
 
-header, #clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands #lego, #products, .special-offers-item:first-of-type .large-item .item-content, .special-offers-item:nth-child(2) .large-item .item-content, .special-offers-item:last-of-type .large-item .item-content, footer {
+header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands #lego, #products, .special-offers-item:first-of-type .large-item .item-content, .special-offers-item:nth-child(2) .large-item .item-content, .special-offers-item:last-of-type .large-item .item-content, footer {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,7 +525,13 @@ header, #clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
     position: unset;
     transform: unset;
     margin-top: 20px;
-    margin-left: 24px;
+    margin-left: 22px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .owl-dots {
+    margin-left: 0;
   }
 }
 
@@ -590,25 +596,19 @@ header, #clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   }
 }
 
-@media screen and (max-width: 1238px) {
+@media screen and (max-width: 1231px) {
   .owl-nav {
-    position: unset;
     transform: unset;
+    left: 0;
+    bottom: 0;
   }
 }
 
 @media screen and (max-width: 991px) {
   .owl-nav {
-    position: absolute;
-    left: 34%;
-    bottom: 0;
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .owl-nav {
-    left: 28%;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -636,7 +636,7 @@ header, #clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 
 @media screen and (max-width: 991px) {
   .owl-prev {
-    left: 17px;
+    left: 0;
     bottom: 7.5px;
   }
 }
@@ -647,15 +647,14 @@ header, #clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 
 @media screen and (max-width: 1238px) {
   .owl-next {
-    left: 207px;
     bottom: 9.5px;
   }
 }
 
 @media screen and (max-width: 991px) {
   .owl-next {
-    left: 190px;
     bottom: 7.5px;
+    right: 0;
   }
 }
 
@@ -739,7 +738,7 @@ main {
   }
 }
 
-#clouds-bg {
+.clouds-bg {
   background-image: url("../../img/popular-brands/popular-brands-bg.png");
   height: 452px;
   width: 100%;
@@ -748,7 +747,7 @@ main {
 }
 
 @media screen and (max-width: 1199px) {
-  #clouds-bg {
+  .clouds-bg {
     display: none;
   }
 }
@@ -881,7 +880,7 @@ main {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 468px) {
   #brands .brand-item .item-content > div:first-of-type img:first-of-type {
     width: 100%;
   }

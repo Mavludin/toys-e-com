@@ -4,7 +4,7 @@ $(document).ready(function() {
 		items: 1,
 		autoplay: false,
 		loop: true,
-		// autoHeight:true,
+		autoHeight:true,
 		nav: true,
 		navText : ["<img src='../../img/header/nav-prev.png'>","<img src='../../img/header/nav-next.png'>"]
 	});
@@ -50,5 +50,7 @@ $(document).ready(function() {
  		$(this).parent().hide();
  		$('#main-mobile-menu').fadeIn();
 	 });
+
+	 $(".owl-nav").before($(".owl-dots"));
 
 });
