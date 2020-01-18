@@ -4,14 +4,19 @@ $(document).ready(function() {
 		items: 1,
 		autoplay: false,
 		loop: true,
-		autoHeight:true,
+		// autoHeight:true,
 		nav: true,
-		navText : ["<img src='../../img/nav-prev.png'>","<img src='../../img/nav-next.png'>"]
+		navText : ["<img src='../../img/header/nav-prev.png'>","<img src='../../img/header/nav-next.png'>"]
 	});
 
-	$("#footer-content h4 i").on('click', function(){
-		$(this).toggleClass('rotate');
-        $(this).parent().next("ul").slideToggle(200)
+
+	$("#footer-content h4").on('click', function(){
+
+		if ($(this).find('img').css('display') == 'inline-block') {
+
+			$(this).find('img').toggleClass('rotate');
+			$(this).next("ul").slideToggle(200)
+		}
 	});
 
 	if ($(window).width() <= 480 ) {
