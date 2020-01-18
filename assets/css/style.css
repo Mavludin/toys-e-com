@@ -580,13 +580,6 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   margin: 5px;
 }
 
-@media screen and (max-width: 991px) {
-  .owl-theme .owl-dots .owl-dot span {
-    width: 10px;
-    height: 10px;
-  }
-}
-
 .owl-theme .owl-dots .owl-dot.active span {
   background: linear-gradient(270deg, #FFF08D 0%, #FEE43A 10.94%, #DF772C 90.1%, #DF772C 100%);
 }
@@ -621,7 +614,7 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   .owl-nav {
     transform: unset;
     left: -5px;
-    bottom: 0;
+    bottom: 5px;
     width: 230px;
   }
 }
@@ -646,14 +639,7 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 @media screen and (max-width: 1231px) {
   .owl-prev {
     left: 0;
-    bottom: 4.5px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .owl-prev {
-    left: 0;
-    bottom: 3.5px;
+    bottom: 0;
   }
 }
 
@@ -663,14 +649,7 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 
 @media screen and (max-width: 1231px) {
   .owl-next {
-    bottom: 4.5px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .owl-next {
-    bottom: 3.5px;
-    right: 0;
+    bottom: 0;
   }
 }
 

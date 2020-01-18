@@ -549,16 +549,10 @@ i {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-
 	background-color: #E23042;
 	width: 12px;
 	height: 12px;
 	margin: 5px;
-
- 	@media screen and (max-width: 991px) {
-	    width: 10px;
-	    height: 10px;
-	}
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
@@ -589,7 +583,7 @@ i {
 	@media screen and (max-width: 1231px) {
 		transform: unset;
 		left: -5px;
-		bottom: 0;
+		bottom: 5px;
 		width: 230px;
 	}
 
@@ -612,12 +606,7 @@ i {
 
 	@media screen and (max-width: 1231px) {
 		left: 0;
-		bottom: 4.5px;
-	}
-
-	@media screen and (max-width: 991px) {
-		left: 0;
-		bottom: 3.5px;
+		bottom: 0
 	}
 
 }
@@ -627,12 +616,7 @@ i {
   right: 0;
 
 	@media screen and (max-width: 1231px) {
-		bottom: 4.5px;
-	}
-
-	@media screen and (max-width: 991px) {
-		bottom: 3.5px;
-		right: 0;
+		bottom: 0
 	}
 
 }
