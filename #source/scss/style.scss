@@ -158,6 +158,10 @@ i {
 			border-radius: 10px;
 		}
 
+		@media screen and (max-width: 600px) {
+			padding: 10px;
+		}
+
 		>div:last-of-type {
 
 			@media screen and (max-width: 991px) {
@@ -371,6 +375,7 @@ i {
 		@media screen and (max-width: 991px) {
 			margin: 0 auto;
 		}
+
 	}
 
 	@media screen and (max-width: 991px) {
@@ -456,6 +461,10 @@ i {
 		width: 336px;
 		height: 55px;
 		margin-top: 18px;
+	}
+
+	@media screen and (max-width: 468px) {
+		width: 263px;
 	}
 
 	span {
@@ -571,7 +580,7 @@ i {
 	}
 
 	@media screen and (max-width: 991px) {
-		width: 200px;
+		width: 205px;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -601,7 +610,7 @@ i {
 
 	@media screen and (max-width: 991px) {
 		left: 0;
-		bottom: 7.5px;
+		bottom: 6.5px;
 	}
 
 }
@@ -615,7 +624,7 @@ i {
 	}
 
 	@media screen and (max-width: 991px) {
-		bottom: 7.5px;
+		bottom: 6.5px;
 		right: 0;
 	}
 
@@ -875,6 +884,7 @@ main {
 		@media screen and (max-width: 991px) {
 			margin-top: 20px;
 		}
+
 	}
 
 	#play-doh {
@@ -983,11 +993,11 @@ main {
 			}
 
 			@media screen and (max-width: 768px) {
-				height: 340px;
+				height: 300px;
 				padding: 5px;
 			}
 
-			@media screen and (max-width: 414px) {
+			@media screen and (max-width: 500px) {
 				height: 290px;
 			}
 
@@ -1011,19 +1021,24 @@ main {
 				width: 100%;
 
 				@media screen and (max-width: 768px) {
-					height: 160px;
+					width: 160px;
 				}
 
-				@media screen and (max-width: 414px) {
-					height: 120px;
+				@media screen and (max-width: 500px) {
+					width: 120px;
 				}
 			}
 
 			.item-title {
 				color: #172029;
 				line-height: 20px;
+
 				@media screen and (max-width: 414px) {
 					font-size: 14px;
+				}
+
+				@media screen and (max-width: 768px) {
+					margin: 0;
 				}
 			}
 
@@ -1172,6 +1187,10 @@ main {
 
 				@media screen and (max-width: 768px) {
 					width: 120px;
+				}
+
+				@media screen and (max-width: 468px) {
+					width: 100px;
 				}
 			}
 		}

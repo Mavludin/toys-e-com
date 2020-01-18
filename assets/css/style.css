@@ -163,6 +163,12 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   }
 }
 
+@media screen and (max-width: 600px) {
+  #mid-header > div {
+    padding: 10px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   #mid-header > div > div:last-of-type {
     display: none;
@@ -475,6 +481,12 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   }
 }
 
+@media screen and (max-width: 468px) {
+  .buy-btn {
+    width: 263px;
+  }
+}
+
 .buy-btn span {
   width: 70%;
 }
@@ -606,7 +618,7 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 
 @media screen and (max-width: 991px) {
   .owl-nav {
-    width: 200px;
+    width: 205px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -637,7 +649,7 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 @media screen and (max-width: 991px) {
   .owl-prev {
     left: 0;
-    bottom: 7.5px;
+    bottom: 6.5px;
   }
 }
 
@@ -653,7 +665,7 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 
 @media screen and (max-width: 991px) {
   .owl-next {
-    bottom: 7.5px;
+    bottom: 6.5px;
     right: 0;
   }
 }
@@ -1062,12 +1074,12 @@ main {
 
 @media screen and (max-width: 768px) {
   #products #products-inner .product-item {
-    height: 340px;
+    height: 300px;
     padding: 5px;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
   #products #products-inner .product-item {
     height: 290px;
   }
@@ -1095,13 +1107,13 @@ main {
 
 @media screen and (max-width: 768px) {
   #products #products-inner .product-item .product-img {
-    height: 160px;
+    width: 160px;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 500px) {
   #products #products-inner .product-item .product-img {
-    height: 120px;
+    width: 120px;
   }
 }
 
@@ -1113,6 +1125,12 @@ main {
 @media screen and (max-width: 414px) {
   #products #products-inner .product-item .item-title {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #products #products-inner .product-item .item-title {
+    margin: 0;
   }
 }
 
@@ -1260,6 +1278,12 @@ main {
 @media screen and (max-width: 768px) {
   .special-offers-item .large-item .thumbnail img {
     width: 120px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .special-offers-item .large-item .thumbnail img {
+    width: 100px;
   }
 }
 
