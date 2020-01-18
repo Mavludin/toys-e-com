@@ -521,9 +521,19 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 
 .owl-dots {
   position: absolute;
-  left: -30%;
+  left: -28%;
   top: 50%;
   transform: rotate(90deg);
+}
+
+.owl-dots button {
+  background-color: #E23042;
+  box-shadow: 0px 2px 3px #F13E50, inset 0px 0px 6px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.15);
+  filter: blur(0.5px);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  margin: 5px;
 }
 
 @media screen and (max-width: 1420px) {
@@ -564,17 +574,16 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 }
 
 .owl-theme .owl-dots .owl-dot span {
-  width: 22px;
-  height: 22px;
-  background: #E23042;
-  box-shadow: 0px 2px 3px #F13E50, inset 0px 0px 6px rgba(0, 0, 0, 0.1), inset 0px 3px 5px rgba(0, 0, 0, 0.15);
-  filter: blur(0.5px);
+  background-color: #E23042;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
 }
 
 @media screen and (max-width: 991px) {
   .owl-theme .owl-dots .owl-dot span {
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -588,31 +597,32 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
 
 .owl-nav {
   transform: rotate(90deg);
-  width: 240px;
+  width: 222px;
   position: absolute;
-  left: -208.5px;
-  bottom: 150px;
+  left: -199.5px;
+  bottom: 45%;
   height: auto;
   z-index: 200;
 }
 
 @media screen and (max-width: 1512px) {
   .owl-nav {
-    bottom: 43%;
+    bottom: 44%;
   }
 }
 
 @media screen and (max-width: 1412px) {
   .owl-nav {
-    left: -141.5px;
+    left: -146.5px;
   }
 }
 
 @media screen and (max-width: 1231px) {
   .owl-nav {
     transform: unset;
-    left: 0;
+    left: -5px;
     bottom: 0;
+    width: 230px;
   }
 }
 
@@ -639,10 +649,10 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   left: 0;
 }
 
-@media screen and (max-width: 1238px) {
+@media screen and (max-width: 1231px) {
   .owl-prev {
     left: 0;
-    bottom: 9.5px;
+    bottom: 4.5px;
   }
 }
 
@@ -657,9 +667,9 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   right: 0;
 }
 
-@media screen and (max-width: 1238px) {
+@media screen and (max-width: 1231px) {
   .owl-next {
-    bottom: 9.5px;
+    bottom: 4.5px;
   }
 }
 

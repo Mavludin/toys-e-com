@@ -4,9 +4,17 @@ $(document).ready(function() {
 		items: 1,
 		autoplay: false,
 		loop: true,
-		autoHeight:true,
 		nav: true,
-		navText : ["<img src='../../img/header/nav-prev.png'>","<img src='../../img/header/nav-next.png'>"]
+		navText : ["<img src='../../img/header/nav-prev.png'>","<img src='../../img/header/nav-next.png'>"],
+		responsive: {
+			0: {
+				autoHeight:true
+			},
+
+			1231: {
+				autoHeight: false
+			}
+		}
 	});
 
 
