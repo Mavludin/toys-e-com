@@ -594,16 +594,9 @@ i {
 	}
 
 	@media screen and (max-width: 991px) {
-		width: 205px;
+		width: 225px;
 		left: 50%;
 		transform: translateX(-50%);
-	}
-
-	img {
-
-		@media screen and (max-width: 991px) {
-			transform: scale(.8);
-		}	
 	}
 }
 
@@ -624,7 +617,7 @@ i {
 
 	@media screen and (max-width: 991px) {
 		left: 0;
-		bottom: 6.5px;
+		bottom: 3.5px;
 	}
 
 }
@@ -638,7 +631,7 @@ i {
 	}
 
 	@media screen and (max-width: 991px) {
-		bottom: 6.5px;
+		bottom: 3.5px;
 		right: 0;
 	}
 
