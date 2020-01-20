@@ -1,0 +1,300 @@
+a:hover {
+	color: inherit;
+}
+
+.buy-btn {
+
+    transition: box-shadow .2s;
+
+	i {
+		transition: opacity .2s
+	}
+
+	&:hover i {
+    	opacity: 0.6;
+    }
+
+    &:hover {
+    	box-shadow: 0px 3px 10px rgba(146, 30, 28, 0.4);
+    }
+}
+
+#top-header {
+	border-bottom: 2px solid #F84053;
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
+
+	ul {
+
+		li {
+			position: relative;
+			padding-left: 40px;
+
+			&:last-of-type::after, &:nth-child(2)::after {
+				content: '';
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				position: absolute;
+				left: 16px;
+				top: 10px;
+				background: rgba(152, 9, 22, 0.5);
+			}
+
+		}
+	}
+
+	a {
+		opacity: 0.6;
+		transition: .2s;
+
+		&:hover {
+			opacity: 1;
+			color: white;
+		}
+	}
+}
+
+
+#mid-header {
+
+	>div {
+		@media screen and (max-width: 576px) {
+			padding: 10px 16px;
+		}
+
+		@media screen and (max-width: 576px) {
+			padding: 10px;
+		}
+	}
+
+	ul li {
+
+	    cursor: pointer;
+	    transition: background-color .2s;
+
+		&:hover {
+			background-color: #F84053;
+		}
+
+		&:active {
+			background-color: #F84053;
+		}
+
+	}
+
+}
+
+#top-menu {
+
+	position: relative;
+
+	@media screen and (max-width: 991px) {
+		display: none;
+	}
+
+	#top-menu-content {
+		background-color: #d2162a;
+		box-shadow: 0px 1px 3px rgba(146, 30, 28, 0.2);
+		border-radius: 13px;
+		padding: 6px;
+		margin-top: 10px;
+
+		>div {
+		    background-color: #D71E31;
+			border-radius: inherit;
+		}
+
+		#catalog-link {
+			border-radius: 13px;
+			background: rgba(235, 61, 77, 0.55);
+			padding: 15px 0;
+			width: 208px;
+			cursor: pointer;
+			transition: .2s;
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+			&.showed {
+				i {
+					display: inline-block;
+					width: 21px;
+				}
+
+				img {
+					display: none;
+				}
+			}
+		
+			i {
+				display: none;
+				font-size: 18px;
+				margin-right: 10px;
+			}
+
+			@media screen and (max-width: 1199px) {
+				padding: 15px;
+			}
+
+			img {
+				margin-right: 10px;
+			}
+
+		}
+
+		nav {
+
+			padding: 0 10px;
+
+			ul {
+
+				li {
+					cursor: pointer;
+
+					a {
+						font-family: 'Source Sans Pro', sans-serif;
+						font-weight: bold;
+						padding: 10px 0;
+						color: #FDFFFF;
+						border-bottom: 2px solid transparent;
+						transition: border-color .2s;
+
+						&:hover {
+							border-color: #FEE43A;
+						}
+
+						&:active {
+							border-color: #FEE43A;
+						}
+
+					}
+				}
+
+				li+li {
+					margin-left: 40px;
+
+					@media screen and (max-width: 1199px) {
+						margin-left: 24px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.my-dropdown-menu {
+	
+	display: none;
+	position: absolute;
+	z-index: 300;
+	margin-top: 10px;
+
+	nav {
+		border-radius: 20px;
+		background-color: white;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+		padding: 16px 24px;
+	}
+
+	li {
+		display: block;
+		font-weight: 600;
+		font-size: 1.2em;
+		line-height: 40px;
+		border-bottom: 1px solid #E9EDF1;
+	
+		transition: border-color .2s;
+
+		&:hover {
+			border-color: #D2162A;
+		}
+		
+		a {
+			color: black;
+		}
+	}
+}
+
+#large-catalog-menu {
+
+	left: 0;
+	padding: 0 14px;
+
+	@media screen and (max-width: 991px) {
+		display: none !important;
+	}
+}
+
+#mobile-menu {
+
+	@media screen and (min-width: 992px) {
+		display: none !important;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 90%;
+	}
+
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	
+	#mobile-catalog-menu {
+		display: none;
+	}
+
+	.back a {
+		color: #E23042;
+	}
+
+	.red-account-icon {
+		margin-right: 6px;
+	}
+
+	.arrow-left-icon {
+		margin-right: 10px;
+	}
+
+}
+
+#products {
+	#products-inner {
+		.product-item {
+			.item-inner {
+				cursor: pointer;
+				transition: box-shadow .2s;
+				&:hover {
+					box-shadow: 0px 5px 5px rgba(29, 52, 79, 0.15);
+				}
+			}
+
+		}
+	}
+}
+
+#footer-content {
+
+	#social {
+
+		a {
+			cursor: pointer;
+
+			i {
+				transition: background-color .2s;
+			}
+
+			&:hover i {
+				background-color: #ED2739;
+			}
+
+			&:active i {
+				background-color: #ED2739;
+			}
+		}
+	}
+
+}

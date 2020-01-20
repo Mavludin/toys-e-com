@@ -76,35 +76,6 @@ i {
 	height: 100%;
 }
 
-#top-header {
-	opacity: 0.6;
-	border-bottom: 2px solid #F84053;
-
-	@media screen and (max-width: 600px) {
-		display: none;
-	}
-
-	ul {
-
-		li {
-			position: relative;
-			padding-left: 40px;
-
-			&:last-of-type::after, &:nth-child(2)::after {
-				content: '';
-				width: 8px;
-				height: 8px;
-				border-radius: 50%;
-				position: absolute;
-				left: 16px;
-				top: 10px;
-				background: rgba(152, 9, 22, 0.5);
-			}
-
-		}
-	}
-}
-
 #search-box {
     width: 326px;
     padding: 12px 12px;
@@ -117,6 +88,10 @@ i {
 
 	@media screen and (max-width: 480px) {
 		width: 170px;
+	}
+
+	button {
+		background-color: unset;
 	}
 
 	i {
@@ -156,10 +131,6 @@ i {
 			box-shadow: 0px 2px 1px #CC2C3B;
 			padding: 10px 20px;
 			border-radius: 10px;
-		}
-
-		@media screen and (max-width: 600px) {
-			padding: 10px;
 		}
 
 		>div:last-of-type {
@@ -220,113 +191,6 @@ i {
 			display: block;
 			cursor: pointer;
 		}
-	}
-
-}
-
-#large-menu {
-
-	@media screen and (max-width: 991px) {
-		display: none;
-	}
-
-	>div {
-		background-color: #d2162a;
-		box-shadow: 0px 1px 3px rgba(146, 30, 28, 0.2);
-		border-radius: 13px;
-		padding: 6px;
-		margin-top: 10px;
-		>div {
-		    background-color: #D71E31;
-			border-radius: inherit;
-		}
-	}
-
-	#catalog-link {
-		border-radius: 13px;
-		background: rgba(235, 61, 77, 0.55);
-		padding: 15px 30px;
-
-
-		@media screen and (max-width: 1199px) {
-			padding: 15px;
-		}
-
-		img {
-			margin-right: 10px;
-		}
-	}
-
-	nav {
-		padding: 15px 10px;
-
-		a {
-			font-family: 'Source Sans Pro', sans-serif;
-			font-weight: bold;
-			color: #FDFFFF;
-		}
-
-		li+li {
-			margin-left: 40px;
-
-			@media screen and (max-width: 1199px) {
-				margin-left: 24px;
-			}
-		}
-	}
-
-}
-
-#mobile-menu {
-	display: none;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	z-index: 300;
-	background-color: white;
-	width: 90%;
-	margin-top: 10px;
-	box-shadow: 0px 4px 20px
-	rgba(0, 0, 0, 0.25);
-	border-radius: 20px;
-
-	#catalog-menu {
-		display: none;
-	}
-
-	li {
-		display: block;
-		font-weight: 600;
-		font-size: 1.4em;
-		line-height: 50px;
-		border-bottom: 1px solid #E9EDF1;
-	
-		transition: border-color .2s;
-
-		@media screen and (max-width: 768px) {
-			font-size: 1.2em;
-			line-height: 40px;
-		}
-
-		&:hover {
-			border-color: #D2162A;
-		}
-		
-		a {
-			color: black;
-		}
-	}
-
-	.back a {
-		color: #E23042;
-	}
-
-	.red-account-icon {
-		margin-right: 6px;
-	}
-
-	.arrow-left-icon {
-		margin-right: 10px;
 	}
 
 }
@@ -436,6 +300,7 @@ i {
 }
 
 .buy-btn {
+
 	font-family: 'Source Sans Pro', sans-serif;
     background: linear-gradient(180deg, #FE9E6C 0%, #FC885E 8.85%, #E8504B 89.06%, #D34546 100%);
     box-shadow: 0px 3px 3px rgba(146, 30, 28, 0.25);
@@ -450,12 +315,6 @@ i {
     outline: unset;
     font-weight: 600;
     margin-top: 50px;
-    transition: .2s;
-
-    &:hover {
-    	opacity: 0.8;
-    	color: #FDFFFF;
-    }
 
 	@media screen and (max-width: 991px) {
 		width: 336px;
@@ -1397,3 +1256,5 @@ footer {
 	}
        
 }
+
+@import "_new.scss";

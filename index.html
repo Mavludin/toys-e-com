@@ -26,7 +26,7 @@
           <div class="container">
             <div class="d-flex flex-wrap justify-content-sm-center justify-content-lg-between align-items-center">
               <div class="p-2">          
-                  <i class="fas fa-map-marker-alt"></i> Республика Дагестан, г.Махачкала
+                  <a href="#"><i class="fas fa-map-marker-alt"></i> Республика Дагестан, г.Махачкала</a>
               </div>
               <div class="p-2">
                 <ul>
@@ -43,13 +43,13 @@
           <div class="d-flex justify-content-between align-items-center">
 
             <div>
-              <img id="logo" src="img/header/logo.png" alt="Logo">
+              <a href="/"><img id="logo" src="img/header/logo.png" alt="Logo"></a>
             </div>
 
-            <div class="d-flex justify-content-around align-items-center" id="search-box">
-              <i class="fas fa-search"></i>
+            <form class="d-flex justify-content-around align-items-center" id="search-box">
+              <button type="submit"><i class="fas fa-search"></i></button>
               <input type="search" name="search" placeholder="Поиск по товарам и брендам">
-            </div>
+            </form>
 
             <div id="hamb-block">
               <img src="img/header/hamb.png" alt="Hamburger">
@@ -70,11 +70,14 @@
           </div>
         </div>
 
-        <div class="container" id="large-menu">
-          <div>
+        <div class="container" id="top-menu">
+          <div id="top-menu-content">
             <div class="d-flex justify-content-between align-items-center">
               <div id="catalog-link">
-                <a href="#"><img src="img/header/catalog.svg" alt="Catalog">Каталог товаров</a>
+                <a href="#" class="d-flex justify-content-center align-items-center">
+                  <i class="fas fa-times"></i>
+                  <img src="img/header/catalog.svg" alt="Catalog">Каталог товаров
+                </a>
               </div>
               <nav>
                 <ul>
@@ -90,10 +93,29 @@
               </nav>
             </div>
           </div>
+
+          <div class="my-dropdown-menu" id="large-catalog-menu">
+            <nav>
+              <ul>
+                <li><a href="#">Куклы и аксессуары</a></li>
+                <li><a href="#">Настольные игры</a></li>
+                <li><a href="№">Фигурки и наборы</a></li>
+                <li><a href="#">Мягкие игрушки</a></li>
+                <li><a href="#">Детские конструкторы</a></li>
+                <li><a href="#">Сюжетно-ролевые игры</a></li>
+                <li><a href="#">Игрушечный транспорт</a></li>
+                <li><a href="#">Роботы и трансформеры</a></li>
+                <li><a href="#">Радиоуправляемые игрушки</a></li>
+                <li><a href="#">Игровые наборы</a></li>
+                <li><a href="#">Игрушки-антистресс</a></li>
+              </ul>
+            </nav>
+          </div>
+
         </div>
 
-        <div class="container" id="mobile-menu">
-          <nav class="p-4">
+        <div class="p-2 my-dropdown-menu" id="mobile-menu">
+          <nav>
             <ul id="main-mobile-menu">
               <li><a href="#">
                 <img class="red-account-icon" src="img/header/red-account.png" alt="Red Account image">Аккаунт</a>
@@ -113,7 +135,7 @@
               <li><a href="#">Контакты</a></li>
             </ul>
 
-            <ul id="catalog-menu">
+            <ul id="mobile-catalog-menu">
               <li class="back">
                 <a href="#"><img class="arrow-left-icon" src="img/header/arrow-left.png" alt="Arrow left">Назад</a>
               </li>
@@ -557,12 +579,10 @@
               <p id="phone"><i class="fas fa-phone-alt"></i> <span>+7 (800) 600-50-05</span></p>
               <p id="schedule">c 9:00 до 21:00, без выходных</p>
               <div id="social" class="d-flex justify-content-around justify-content-sm-between  align-items-center">
-
-                <i class="fab fa-vk"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-facebook-f"></i>
-
+              <a href="#vk"><i class="fab fa-vk"></i></a>
+              <a href="#instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#youtube"><i class="fab fa-youtube"></i></a>
+              <a href="#facebook"><i class="fab fa-facebook-f"></i></a>
               </div>
             </div>
           </div>

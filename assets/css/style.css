@@ -77,33 +77,6 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   height: 100%;
 }
 
-#top-header {
-  opacity: 0.6;
-  border-bottom: 2px solid #F84053;
-}
-
-@media screen and (max-width: 600px) {
-  #top-header {
-    display: none;
-  }
-}
-
-#top-header ul li {
-  position: relative;
-  padding-left: 40px;
-}
-
-#top-header ul li:last-of-type::after, #top-header ul li:nth-child(2)::after {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  position: absolute;
-  left: 16px;
-  top: 10px;
-  background: rgba(152, 9, 22, 0.5);
-}
-
 #search-box {
   width: 326px;
   padding: 12px 12px;
@@ -121,6 +94,10 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   #search-box {
     width: 170px;
   }
+}
+
+#search-box button {
+  background-color: unset;
 }
 
 #search-box i {
@@ -160,12 +137,6 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
     box-shadow: 0px 2px 1px #CC2C3B;
     padding: 10px 20px;
     border-radius: 10px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  #mid-header > div {
-    padding: 10px;
   }
 }
 
@@ -224,114 +195,6 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
     display: block;
     cursor: pointer;
   }
-}
-
-@media screen and (max-width: 991px) {
-  #large-menu {
-    display: none;
-  }
-}
-
-#large-menu > div {
-  background-color: #d2162a;
-  box-shadow: 0px 1px 3px rgba(146, 30, 28, 0.2);
-  border-radius: 13px;
-  padding: 6px;
-  margin-top: 10px;
-}
-
-#large-menu > div > div {
-  background-color: #D71E31;
-  border-radius: inherit;
-}
-
-#large-menu #catalog-link {
-  border-radius: 13px;
-  background: rgba(235, 61, 77, 0.55);
-  padding: 15px 30px;
-}
-
-@media screen and (max-width: 1199px) {
-  #large-menu #catalog-link {
-    padding: 15px;
-  }
-}
-
-#large-menu #catalog-link img {
-  margin-right: 10px;
-}
-
-#large-menu nav {
-  padding: 15px 10px;
-}
-
-#large-menu nav a {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bold;
-  color: #FDFFFF;
-}
-
-#large-menu nav li + li {
-  margin-left: 40px;
-}
-
-@media screen and (max-width: 1199px) {
-  #large-menu nav li + li {
-    margin-left: 24px;
-  }
-}
-
-#mobile-menu {
-  display: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 300;
-  background-color: white;
-  width: 90%;
-  margin-top: 10px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-}
-
-#mobile-menu #catalog-menu {
-  display: none;
-}
-
-#mobile-menu li {
-  display: block;
-  font-weight: 600;
-  font-size: 1.4em;
-  line-height: 50px;
-  border-bottom: 1px solid #E9EDF1;
-  transition: border-color .2s;
-}
-
-@media screen and (max-width: 768px) {
-  #mobile-menu li {
-    font-size: 1.2em;
-    line-height: 40px;
-  }
-}
-
-#mobile-menu li:hover {
-  border-color: #D2162A;
-}
-
-#mobile-menu li a {
-  color: black;
-}
-
-#mobile-menu .back a {
-  color: #E23042;
-}
-
-#mobile-menu .red-account-icon {
-  margin-right: 6px;
-}
-
-#mobile-menu .arrow-left-icon {
-  margin-right: 10px;
 }
 
 #fixed-bot-menu {
@@ -465,12 +328,6 @@ header, .clouds-bg, #brands #play-doh, #brands #beyblade, #brands #lol, #brands 
   outline: unset;
   font-weight: 600;
   margin-top: 50px;
-  transition: .2s;
-}
-
-.buy-btn:hover {
-  opacity: 0.8;
-  color: #FDFFFF;
 }
 
 @media screen and (max-width: 991px) {
@@ -1492,4 +1349,282 @@ footer {
   #schedule {
     text-align: center;
   }
+}
+
+a:hover {
+  color: inherit;
+}
+
+.buy-btn {
+  transition: box-shadow .2s;
+}
+
+.buy-btn i {
+  transition: opacity .2s;
+}
+
+.buy-btn:hover i {
+  opacity: 0.6;
+}
+
+.buy-btn:hover {
+  box-shadow: 0px 3px 10px rgba(146, 30, 28, 0.4);
+}
+
+#top-header {
+  border-bottom: 2px solid #F84053;
+}
+
+@media screen and (max-width: 600px) {
+  #top-header {
+    display: none;
+  }
+}
+
+#top-header ul li {
+  position: relative;
+  padding-left: 40px;
+}
+
+#top-header ul li:last-of-type::after, #top-header ul li:nth-child(2)::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  left: 16px;
+  top: 10px;
+  background: rgba(152, 9, 22, 0.5);
+}
+
+#top-header a {
+  opacity: 0.6;
+  transition: .2s;
+}
+
+#top-header a:hover {
+  opacity: 1;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  #mid-header > div {
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #mid-header > div {
+    padding: 10px;
+  }
+}
+
+#mid-header ul li {
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+#mid-header ul li:hover {
+  background-color: #F84053;
+}
+
+#mid-header ul li:active {
+  background-color: #F84053;
+}
+
+#top-menu {
+  position: relative;
+}
+
+@media screen and (max-width: 991px) {
+  #top-menu {
+    display: none;
+  }
+}
+
+#top-menu #top-menu-content {
+  background-color: #d2162a;
+  box-shadow: 0px 1px 3px rgba(146, 30, 28, 0.2);
+  border-radius: 13px;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+#top-menu #top-menu-content > div {
+  background-color: #D71E31;
+  border-radius: inherit;
+}
+
+#top-menu #top-menu-content #catalog-link {
+  border-radius: 13px;
+  background: rgba(235, 61, 77, 0.55);
+  padding: 15px 0;
+  width: 208px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#top-menu #top-menu-content #catalog-link:hover {
+  opacity: 0.8;
+}
+
+#top-menu #top-menu-content #catalog-link.showed i {
+  display: inline-block;
+  width: 21px;
+}
+
+#top-menu #top-menu-content #catalog-link.showed img {
+  display: none;
+}
+
+#top-menu #top-menu-content #catalog-link i {
+  display: none;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  #top-menu #top-menu-content #catalog-link {
+    padding: 15px;
+  }
+}
+
+#top-menu #top-menu-content #catalog-link img {
+  margin-right: 10px;
+}
+
+#top-menu #top-menu-content nav {
+  padding: 0 10px;
+}
+
+#top-menu #top-menu-content nav ul li {
+  cursor: pointer;
+}
+
+#top-menu #top-menu-content nav ul li a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  padding: 10px 0;
+  color: #FDFFFF;
+  border-bottom: 2px solid transparent;
+  transition: border-color .2s;
+}
+
+#top-menu #top-menu-content nav ul li a:hover {
+  border-color: #FEE43A;
+}
+
+#top-menu #top-menu-content nav ul li a:active {
+  border-color: #FEE43A;
+}
+
+#top-menu #top-menu-content nav ul li + li {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 1199px) {
+  #top-menu #top-menu-content nav ul li + li {
+    margin-left: 24px;
+  }
+}
+
+.my-dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 300;
+  margin-top: 10px;
+}
+
+.my-dropdown-menu nav {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 16px 24px;
+}
+
+.my-dropdown-menu li {
+  display: block;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 40px;
+  border-bottom: 1px solid #E9EDF1;
+  transition: border-color .2s;
+}
+
+.my-dropdown-menu li:hover {
+  border-color: #D2162A;
+}
+
+.my-dropdown-menu li a {
+  color: black;
+}
+
+#large-catalog-menu {
+  left: 0;
+  padding: 0 14px;
+}
+
+@media screen and (max-width: 991px) {
+  #large-catalog-menu {
+    display: none !important;
+  }
+}
+
+#mobile-menu {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+@media screen and (min-width: 992px) {
+  #mobile-menu {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #mobile-menu {
+    width: 90%;
+  }
+}
+
+#mobile-menu #mobile-catalog-menu {
+  display: none;
+}
+
+#mobile-menu .back a {
+  color: #E23042;
+}
+
+#mobile-menu .red-account-icon {
+  margin-right: 6px;
+}
+
+#mobile-menu .arrow-left-icon {
+  margin-right: 10px;
+}
+
+#products #products-inner .product-item .item-inner {
+  cursor: pointer;
+  transition: box-shadow .2s;
+}
+
+#products #products-inner .product-item .item-inner:hover {
+  box-shadow: 0px 5px 5px rgba(29, 52, 79, 0.15);
+}
+
+#footer-content #social a {
+  cursor: pointer;
+}
+
+#footer-content #social a i {
+  transition: background-color .2s;
+}
+
+#footer-content #social a:hover i {
+  background-color: #ED2739;
+}
+
+#footer-content #social a:active i {
+  background-color: #ED2739;
 }
